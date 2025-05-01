@@ -23,29 +23,4 @@ public class Employee {
         taskName.assignTask();
     }
 
-    public String getEmpName() {
-        return empName;
-    }
-
-    public void setEmpName(String empName) {
-        this.empName = empName;
-    }
-
-    public int getEmpId() {
-        return empId;
-    }
-
-    public void setEmpId(int empId) {
-        this.empId = empId;
-    }
-
-    public Task getTaskName() {
-        return taskName;
-    }
-
-    public void setTaskName(Task taskName) {
-        this.taskName = taskName;
-    }
-
-
 }
