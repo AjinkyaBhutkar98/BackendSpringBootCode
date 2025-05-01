@@ -18,4 +18,12 @@ public class Task {
         System.out.println(taskName+" task has been assigned");
 
     }
+
+    public String getTaskName() {
+        return taskName;
+    }
+
+    public void setTaskName(String taskName) {
+        this.taskName = taskName;
+    }
 }
