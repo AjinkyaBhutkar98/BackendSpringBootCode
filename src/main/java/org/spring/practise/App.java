@@ -19,6 +19,7 @@ public class App
 
         ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
 
+        //obj creation using spring container
         Employee e2=context.getBean("emp1",Employee.class);
 
         e2.assignTask();
