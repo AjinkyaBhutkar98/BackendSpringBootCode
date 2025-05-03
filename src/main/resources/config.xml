@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        ">
 
+    <context:component-scan base-package="org.spring.practise"/>
     <!-- bean definitions here -->
 
 
-    <bean class="org.spring.practise.Task" id="task1">
-        <property name="taskName" value="optimise database queries"></property>
-    </bean>
-    <bean class="org.spring.practise.Employee" id="emp1">
+<!--    <bean class="org.spring.practise.Task" id="task1">-->
+<!--        <property name="taskName" value="optimise database queries"></property>-->
+<!--    </bean>-->
+<!--    <bean class="org.spring.practise.Employee" id="emp1">-->
 
-        <property name="empId" value="2"></property>
-        <property name="empName" value="Ajinkya Bhutkar 2"></property>
-        <property name="taskName"  ref="task1"></property>
-    </bean>
+<!--        <property name="empId" value="2"></property>-->
+<!--        <property name="empName" value="Ajinkya Bhutkar 2"></property>-->
+<!--        <property name="taskName"  ref="task1"></property>-->
+<!--    </bean>-->
 
 </beans>
