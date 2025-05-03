@@ -19,6 +19,7 @@ public class BeanContainer {
 
     @Bean(name="emptaskNameBean")
     public String taskName(){
+
         return "make objects";
     }
 

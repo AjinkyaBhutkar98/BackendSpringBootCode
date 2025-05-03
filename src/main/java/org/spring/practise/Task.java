@@ -14,8 +14,8 @@ public class Task {
         System.out.println("Default constructor of Task");
     }
 
-
-    public Task(@Qualifier("emptaskNameBean") String taskName){
+    @Autowired
+    public Task(@Qualifier("emptaskNameBean")  String taskName){
 
         this.taskName=taskName;
     }

@@ -19,7 +19,7 @@ public class Employee {
     }
 
     @Autowired
-    Employee(@Qualifier("empIdBean") int empId,@Qualifier("empNameBean") String empName, Task taskName){
+    Employee(@Qualifier("empIdBean") int empId,@Qualifier("empNameBean") String empName,Task taskName){
         this.empId=empId;
         this.empName=empName;
         this.taskName=taskName;
