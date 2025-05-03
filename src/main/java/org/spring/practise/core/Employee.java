@@ -1,4 +1,4 @@
-package org.spring.practise;
+package org.spring.practise.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,15 +11,13 @@ public class Employee {
     private String empName;
     private Task taskName;
 
-
-
     Employee(){
 
         System.out.println("Default constructor of Employee");
     }
 
     @Autowired
-    Employee(@Qualifier("empIdBean") int empId,@Qualifier("empNameBean") String empName,Task taskName){
+    public Employee(@Qualifier("empIdBean") int empId, @Qualifier("empNameBean") String empName, Task taskName){
         this.empId=empId;
         this.empName=empName;
         this.taskName=taskName;

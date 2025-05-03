@@ -1,10 +1,16 @@
-package org.spring.practise;
+package org.spring.practise.core;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//to pass single package
+//@ComponentScan(basePackages = "org.spring.practise")
+//to pass multiple packages
+@ComponentScan(basePackages = {"org.spring.practise.core","org.spring.practise.config"})
 public class BeanContainer {
+
 
     @Bean(name="empIdBean")
     public int empId(){

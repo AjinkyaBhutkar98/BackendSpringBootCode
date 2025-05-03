@@ -1,4 +1,4 @@
-package org.spring.practise;
+package org.spring.practise.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
